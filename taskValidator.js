@@ -5,7 +5,6 @@ class TaskValidator {
     // Konfiguracja JSDOM pozwalająca na parsowanie CSS
     this.dom = new JSDOM(htmlCode, {
       resources: "usable",
-      runScripts: "dangerously",
     });
     this.document = this.dom.window.document;
   }
